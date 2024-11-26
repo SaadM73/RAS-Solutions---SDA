@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="900.0" style="-fx-background-color: linear-gradient(to bottom, #3b3b3b, #1e1e1e);" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Member.MemberDashboardController">
+
+    <!-- Header Section -->
+    <VBox alignment="CENTER" layoutX="0.0" layoutY="0.0" prefHeight="122.0" prefWidth="900.0" spacing="10.0" style="-fx-background-color: #5a3d31;">
+        <Label style="-fx-text-fill: white; -fx-font-size: 28px; -fx-font-weight: bold;" text="RAS Leisure Club" />
+        <Label fx:id="welcomeLabel" style="-fx-text-fill: white; -fx-font-size: 18px;" text="Welcome, [Member Name]!" />
+    </VBox>
+    
+    <Button fx:id="backButton" layoutX="14.0" layoutY="136.0" onAction="#handleBack" prefHeight="25.0" prefWidth="67.0" style="-fx-background-color: #5a3d31; -fx-text-fill: white;" text="&lt;-- Back" />
+
+    <!-- Buttons Section -->
+    <VBox alignment="CENTER" layoutX="240.0" layoutY="148.0" prefHeight="500.0" prefWidth="400.0" spacing="20.0">
+        <Button fx:id="viewBookingButton" mnemonicParsing="false" onAction="#handleViewBooking" prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: #5a3d31; -fx-text-fill: white;" text="View Bookings">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Button>
+        <Button fx:id="makeBookingButton" mnemonicParsing="false" onAction="#handleMakeBooking" prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: #5a3d31; -fx-text-fill: white;" text="Make Booking">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Button>
+        <Button fx:id="cancelBookingButton" mnemonicParsing="false" onAction="#handleCancelBooking" prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: #5a3d31; -fx-text-fill: white;" text="Cancel Booking">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Button>
+        <Button fx:id="payBillsButton" mnemonicParsing="false" onAction="#handlePayBills" prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: #5a3d31; -fx-text-fill: white;" text="Pay Bills">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Button>
+        <Button fx:id="requestRefundButton" mnemonicParsing="false" onAction="#handleRequestRefund" prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: #5a3d31; -fx-text-fill: white;" text="Request Refund">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Button>
+        <Button fx:id="updateProfileButton" mnemonicParsing="false" onAction="#handleUpdateProfile" prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: #5a3d31; -fx-text-fill: white;" text="Update Profile">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Button>
+        <Button fx:id="membershipDetailsButton" mnemonicParsing="false" onAction="#handleMembershipDetails" prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: #5a3d31; -fx-text-fill: white;" text="Membership Details">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Button>
+    </VBox>
+
+    <!-- Footer Section -->
+    <ImageView fitHeight="164.0" fitWidth="219.0" layoutX="14.0" layoutY="522.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@ras(1).png" />
+        </image>
+    </ImageView>
+    <Label layoutX="640.0" layoutY="677.0" style="-fx-text-fill: white; -fx-font-size: 12px;" text="© 2024 RAS Leisure Club - All Rights Reserved" />
+</AnchorPane>

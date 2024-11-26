@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="600.0" prefWidth="835.0" style="-fx-background-color: linear-gradient(to bottom, #3b3b3b, #1e1e1e);" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Member.MembershipDetailsController">
+
+    <!-- Header Section -->
+    <VBox alignment="CENTER" layoutX="0.0" layoutY="0.0" prefHeight="119.0" prefWidth="900.0" spacing="10.0" style="-fx-background-color: #5a3d31;">
+        <Label style="-fx-text-fill: white; -fx-font-size: 28px; -fx-font-weight: bold;" text="RAS Leisure Club" />
+        <Label style="-fx-text-fill: white; -fx-font-size: 18px;" text="Your Membership Details" />
+    </VBox>
+	<Button fx:id="backButton" layoutX="14.0" layoutY="132.0" onAction="#handleBack" prefHeight="25.0" prefWidth="67.0" style="-fx-background-color: #5a3d31; -fx-text-fill: white;" text="&lt;-- Back" />
+
+    <!-- Membership Details Section -->
+    <Label layoutX="278.0" layoutY="231.0" style="-fx-text-fill: white;" text="Membership Type:" />
+    <Label fx:id="membershipTypeLabel" layoutX="439.0" layoutY="231.0" style="-fx-text-fill: white;" />
+
+    <Label layoutX="317.0" layoutY="300.0" style="-fx-text-fill: white;" text="Start Date:" />
+    <Label fx:id="startDateLabel" layoutX="438.0" layoutY="300.0" style="-fx-text-fill: white;" />
+
+    <Label layoutX="320.0" layoutY="367.0" style="-fx-text-fill: white;" text="End Date:" />
+    <Label fx:id="endDateLabel" layoutX="437.0" layoutY="367.0" style="-fx-text-fill: white;" />
+
+    <Label layoutX="335.0" layoutY="434.0" style="-fx-text-fill: white;" text="Status:" />
+    <Label fx:id="statusLabel" layoutX="436.0" layoutY="434.0" style="-fx-text-fill: white;" />
+
+    <Label fx:id="feedbackLabel" layoutX="50.0" layoutY="300.0" style="-fx-text-fill: red;" />
+
+    <!-- Footer Section -->
+    <ImageView fitHeight="160.0" fitWidth="165.0" layoutX="14.0" layoutY="526.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@ras(1).png" />
+        </image>
+    </ImageView>
+    <Label layoutX="327.0" layoutY="655.0" style="-fx-text-fill: white; -fx-font-size: 12px;" text="© 2024 RAS Leisure Club - All Rights Reserved" />
+</AnchorPane>

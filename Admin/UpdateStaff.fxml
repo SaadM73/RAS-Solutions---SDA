@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="600.0" prefWidth="835.0" style="-fx-background-color: linear-gradient(to bottom, #3b3b3b, #1e1e1e);" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Admin.UpdateStaffController">
+
+    <!-- Header Section -->
+    <VBox alignment="CENTER" layoutX="0.0" layoutY="0.0" prefHeight="122.0" prefWidth="900.0" spacing="10.0" style="-fx-background-color: #5a3d31;">
+        <Label style="-fx-text-fill: white; -fx-font-size: 28px; -fx-font-weight: bold;" text="RAS Leisure Club" />
+        <Label style="-fx-text-fill: white; -fx-font-size: 18px;" text="Update Staff" />
+    </VBox>
+	<Button fx:id="backButton" layoutX="14.0" layoutY="134.0" onAction="#handleBack" prefHeight="25.0" prefWidth="67.0" style="-fx-background-color: #5a3d31; -fx-text-fill: white;" text="&lt;-- Back" />
+
+    <!-- Form Section -->
+    <VBox alignment="CENTER" layoutX="274.0" layoutY="134.0" prefHeight="370.0" prefWidth="312.0" spacing="20.0">
+        <Label style="-fx-text-fill: white; -fx-font-size: 16px;" text="Full Name:" />
+        <TextField fx:id="fullNameField" promptText="Enter full name" style="-fx-background-radius: 5; -fx-padding: 5;" />
+
+        <Label style="-fx-text-fill: white; -fx-font-size: 16px;" text="Email:" />
+        <TextField fx:id="emailField" promptText="Enter email" style="-fx-background-radius: 5; -fx-padding: 5;" />
+
+        <Label style="-fx-text-fill: white; -fx-font-size: 16px;" text="Phone Number:" />
+        <TextField fx:id="phoneNumberField" promptText="Enter phone number" style="-fx-background-radius: 5; -fx-padding: 5;" />
+
+        <Label style="-fx-text-fill: white; -fx-font-size: 16px;" text="New Password:" />
+        <PasswordField fx:id="passwordField" promptText="Enter new password" style="-fx-background-radius: 5; -fx-padding: 5;" />
+        
+        <Label style="-fx-text-fill: white; -fx-font-size: 16px;" text="Role:" />
+        <TextField fx:id="roleField" promptText="Enter role" style="-fx-background-radius: 5; -fx-padding: 5;" />
+
+        <HBox alignment="CENTER" spacing="20.0" />
+    </VBox>
+
+    <!-- Footer Section -->
+    <ImageView fitHeight="163.0" fitWidth="202.0" layoutX="14.0" layoutY="517.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@ras(1).png" />
+        </image>
+    </ImageView>
+    <Label layoutX="307.0" layoutY="643.0" style="-fx-text-fill: white; -fx-font-size: 12px;" text="© 2024 RAS Leisure Club - All Rights Reserved" />
+      <Button fx:id="cancelButton" layoutX="450.0" layoutY="599.0" mnemonicParsing="false" onAction="#handleCancel" prefHeight="26.0" prefWidth="138.0" style="-fx-background-color: #5a3d31; -fx-text-fill: white;" text="Cancel" />
+      <Button fx:id="saveButton" layoutX="274.0" layoutY="599.0" mnemonicParsing="false" onAction="#handleSaveChanges" prefWidth="150.0" style="-fx-background-color: #5a3d31; -fx-text-fill: white;" text="Save Changes" />
+<Label fx:id="feedbackLabel" layoutX="211.0" layoutY="527.0" prefHeight="20.0" prefWidth="400.0" style="-fx-text-fill: white; -fx-font-size: 14px;" text=" " /></AnchorPane>
