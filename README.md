@@ -19,7 +19,7 @@ This project incorporates the following **Gang of Four (GoF) Design Patterns**:
 ## Technologies Used
 - **Java**: Core programming language.
 - **JavaFX**: For the graphical user interface.
-- **SQLite**: Backend database for persistence.
+- **MySql**: Backend database for persistence.
 - **FXML**: For designing UI layouts.
 
 ## Installation
